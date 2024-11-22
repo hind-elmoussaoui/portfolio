@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    section {
+      padding: 2rem;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Bienvenue sur mon portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Section Home -->
+  <section id="home">
+    <div class="container">
+      <h2>Home</h2>
+      <p>Bienvenue sur mon portfolio personnel. Explorez mon travail et apprenez-en plus sur moi.</p>
+    </div>
+  </section>
+
+  <!-- Section About -->
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>Je suis un développeur web passionné avec une expérience dans le développement front-end et back-end.</p>
+      <audio controls>
+        <source src="audio/presentation.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Section Work -->
+  <section id="work">
+    <div class="container">
+      <h2>Work</h2>
+      <ul>
+        <li>Projet 1: <a href="project1.html">Site E-commerce</a></li>
+        <li>Projet 2: <a href="project2.html">Portfolio Créatif</a></li>
+        <li>Projet 3: <a href="project3.html">Application de Blog</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section Resume -->
+  <section id="resume">
+    <div class="container">
+      <h2>Resume</h2>
+      <table border="1" cellpadding="5">
+        <tr>
+          <th>Année</th>
+          <th>Expérience</th>
+        </tr>
+        <tr>
+          <td>2020-2021</td>
+          <td>Développeur Front-End chez XYZ</td>
+        </tr>
+        <tr>
+          <td>2021-2022</td>
+          <td>Développeur Full-Stack chez ABC</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Nom :</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    <video width="320" height="240" controls>
+      <source src="video/presentation.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+  </footer>
+
+</body>
+</html>
